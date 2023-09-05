@@ -11,10 +11,10 @@ def nextPrime(last, primes):
 
 def prime(n):
 	primes = [2]
-	while len(primes) < 10001:
+	while len(primes) < n:
 		next = nextPrime(primes[-1], primes)
 		primes.append(next)
 	return primes[-1]
 
 
-print(prime(6))
+print(prime(10001))
